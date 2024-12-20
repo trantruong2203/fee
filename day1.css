@@ -4,15 +4,48 @@ header {
 }
 
 main {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
     margin-top: 10px;
-    background-color: orange;
-    height: 200px;
-    grid-template-rows: auto;
-    gap: 20px;
 
-
+    .box1 {
+        
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        .con {
+            background-color: orange;
+        }
+    }
+    .box2 {
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        gap: 10px;
+        .con {
+            background-color: orange;
+        }
+    }
+    .box3 {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+        .con {
+            background-color: greenyellow;
+        }
+    }
+    
 }
-t1 {
+h1 {
     height: 50px;
-    background-color: greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+   .box {
+        background-color: greenyellow;
+    }
+
 }
+
+
