@@ -208,7 +208,7 @@ main {
 
 
 
-footer {
+footer{
     display: flex;
     justify-content: space-around;
     padding: 20px;

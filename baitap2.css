@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(https://s3-alpha-sig.figma.com/img/869a/8c79/e44842e0a95b96aa69948da3009e4d5e?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qKU6KGqlCVQ7kQqh6WDjO7mbzx2~GTjIDdlOkgQ5oJnrvymnLa8VoL3BpLLHyGkkok0uFco~3tyyjRMrVtWC1bad9GtHXKHnP-JbKvc9s400Lr6qq2S17VseVC2jWqL4fL8W4PYHqeps6Fy02-r5PBHEv~unMSBi-u6tL8BxgJeveua~aowyG1mebJdFIqjtqErXwo9cIVTooWfLev6Y-UEAtD4HrYYmKIvowS~F4bOqH2K6HIN8l6sUSo36ln0PMMoLc8Nq5NQKwpch84DQu3UGyX4rSqNBsfuzDhpmsj5xAqIlkIv8XN52ddgikIcwuzaliIrEBqATU6qLUHZTBQ__);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        width: 70%;
+        position: relative;
+        background-color: #51C8BC;
+
+        .box-img1 {
+            position: absolute;
+            left: -80px;
+            top: 150px;
+            z-index: 2;
+            width: 60%;
+        }
+
+        .left {
+            
+            padding: 20px;
+
+            .box-img {
+                width: 30%;
+            }
+
+            h1 {
+                text-align: center;
+                color: #ffff;
+                margin-top: 30px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            background-color: #ffff;
+            border-radius: 20px;
+            padding: 20px 70px;
+            position: relative;
+            font-size: 80%;
+
+            p {
+                text-align: center;
+            }
+
+            h1 {
+                margin-top: 30px;
+            }
+
+            select {
+                border-style: none;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+
+            .form-group {
+                position: relative;
+                margin-top: 20px;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    color: #BEBCBC;
+                }
+
+            }
+            .checkcheck{
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+                align-items: center;
+            }
+            input[type="checkbox"] {
+                width: auto;
+                margin-left: 40px;
+                font-size: 12px;
+                color: #BEBCBC;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                gap: 30px;
+                color: #BEBCBC;
+                border-style: none;
+                border-bottom: solid 1px #F3F3F3;
+            }
+
+            button[type="submit"] {
+                width: 100%;
+                height: 50px;
+                background-color: #3BADCD;
+                border-radius: 10px;
+                color: aliceblue;
+                font-weight: 800;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+
+            .signup {
+                display: flex;
+                justify-content: space-around;
+                gap: 10px;
+                margin-top: 20px;
+
+                a {
+                    color: black;
+                    margin-left: 10px;
+                }
+            }
+
+            p {
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+
+}

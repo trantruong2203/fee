@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/skjolden-norway-may-16-2023-mountain_58702-11013.jpg?t=st=1734669397~exp=1734672997~hmac=c62cadd9059244f7e712e7143267174eed83fdf80049ede42b43a8337cdcf6af&w=2000);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+
+    .left {
+        img {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    }
+
+    form {
+        background: rgba(0, 0, 0, 0.5);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        padding: 30px;
+
+        h1 {
+            text-align: center;
+        }
+
+        .right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                width: auto;
+                margin-left: 15px;
+            }
+        }
+
+        .link {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+
+            button {
+                padding: 10px 20px;
+                background-color: green;
+                color: white;
+            }
+        }
+    }
+}

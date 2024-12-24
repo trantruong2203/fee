@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-vector/retro-style-futuristic-landscape-background_52683-17904.jpg?t=st=1734671456~exp=1734675056~hmac=c80dce6cb16f59f34c546602647841cd3dc42500ea25d3f9a6ed841c486bb073&w=996);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        width: 60%;
+       
+        .right{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .form-group{
+                position: relative;
+                margin-top: 30px;   
+                
+                i{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 30px;
+                    color: black;
+                }
+            }
+            input, button{
+                width: 100%;
+                
+                padding: 10px;
+                border-radius: 50px;
+               
+            }
+            button{
+                background-color: blue;
+                color: white;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            a{
+                color: aliceblue;
+                
+            }
+            .button{
+                display: flex;
+                justify-content: space-evenly;
+                button{
+                    width: auto;
+                    height: auto;
+                    border-radius: 0%;
+                }
+            }
+            .link1{
+                margin-top: 20px;
+                a{
+                    color: red;
+                }
+            }
+
+            }
+        }
+    }
