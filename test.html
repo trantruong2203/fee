@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .list-info {
+      display: block;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      width: 90%;
+
+      .list1 {
+        width: 635px;
+
+
+      }
+    }
+
+    .box-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box-img {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Carousel HTML -->
+  <div class="carousel-container">
+    <button class="carousel-prev">&#10094;</button>
+    <div class="carousel">
+      <div class="carousel-item list1 bg-light p-4">
+        <div class="content border-bottom border-warning mb-4 py-2">
+          <p>Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever
+            since the 1500s.</p>
+        </div>
+        <div class="box-content">
+          <div class="box-img">
+            <img src="https://themewagon.github.io/fruitables/img/testimonial-1.jpg" class="rounded" alt="">
+            <div class="content">
+              <h2 class="text-nowrap">Client Name 1</h2>
+              <h5 class="fw-light">Profession</h5>
+            </div>
+          </div>
+          <i class="fas fa-quote-left fa-flip-horizontal"></i>
+        </div>
+      </div>
+
+      <div class="carousel-item list1 bg-light p-4">
+        <div class="content border-bottom border-warning mb-4 py-2">
+          <p>Another testimonial text that can be displayed in this carousel.</p>
+        </div>
+        <div class="box-content">
+          <div class="box-img">
+            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
+            <div class="content">
+              <h2 class="text-nowrap">Client Name 2</h2>
+              <h5 class="fw-light">Another Profession</h5>
+            </div>
+          </div>
+          <i class="fas fa-quote-left fa-flip-horizontal"></i>
+        </div>
+      </div>
+      <div class="carousel-item list1 bg-light p-4">
+        <div class="content border-bottom border-warning mb-4 py-2">
+          <p>Another testimonial text that can be displayed in this carousel.</p>
+        </div>
+        <div class="box-content">
+          <div class="box-img">
+            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
+            <div class="content">
+              <h2 class="text-nowrap">Client Name 2</h2>
+              <h5 class="fw-light">Another Profession</h5>
+            </div>
+          </div>
+          <i class="fas fa-quote-left fa-flip-horizontal"></i>
+        </div>
+      </div>
+      <div class="carousel-item list1 bg-light p-4">
+        <div class="content border-bottom border-warning mb-4 py-2">
+          <p>Another testimonial text that can be displayed in this carousel.</p>
+        </div>
+        <div class="box-content">
+          <div class="box-img">
+            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
+            <div class="content">
+              <h2 class="text-nowrap">Client Name 2</h2>
+              <h5 class="fw-light">Another Profession</h5>
+            </div>
+          </div>
+          <i class="fas fa-quote-left fa-flip-horizontal"></i>
+        </div>
+      </div>
+
+      <!-- Add more carousel items as needed -->
+    </div>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <!-- Carousel Styles -->
+  <style>
+    .carousel-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .carousel-prev {
+      left: 0;
+    }
+
+    .carousel-next {
+      right: 0;
+    }
+  </style>
+
+  <!-- Carousel JavaScript -->
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    }, 3000);
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+  </script>
+
+</body>
+
+</html>

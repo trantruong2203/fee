@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+
+}
+
+header {
+    .text-logo {
+        color: #054C73;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .menu {
+        color: var(--Font-Color, #333);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+main {
+    .baner {
+        background: url(https://s3-alpha-sig.figma.com/img/98fb/219f/a11f805aade2224f1d6658764a2395df?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TcVSCt1gVi6P60SSTygMFPjBvkFI145WeMkfMUP4grhjUie5XcpoP8aGJSo~HADl0Tf2qM0lBB86j1Ft9fhJRMkyvepVWSI7tJ7lnit3K-vX0yNWRflR2lHjzYv~pxdQ6fJK2nKQjMTs8U6DwbqUcwg75Eae0v6tnmk9mcoSvDcTB23dASZpwyGhOSarxB-jgquPX36qJw144mP0HLMh5PiB-b8nIy7lZO136Esp4S-0vxkxd6w0KhheRlqUTpVArd1skkbFPzbJ4xVRHGKXGCb8NKv57J7atuMQk4awZtqkcgVBiBFCJ9FO6fRm8jiwr9lHj1qDwy3CBGmdRlYhtw__) lightgray 50% / cover no-repeat;
+        height: 1000px;
+        position: relative;
+
+        .new {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            background-color: #DFE9F4;
+            padding: 30px;
+            width: 30%;
+            border-radius: 5%;
+
+            button {
+                background-color: #054C73;
+            }
+        }
+    }
+
+    .Delivery {
+        background-color: #e0e6fa;
+        padding: 10px;
+        border: 1px solid black;
+
+        .row {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+        }
+    }
+
+    .Inspi {
+        margin-top: 30px;
+
+        h1 {
+            color: var(--Font-Color, #333);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+
+        h6 {
+            color: var(--Font-Color1, #666);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+            margin-top: 80px;
+
+
+
+            .box-img1 {
+                width: 355px;
+                height: 434px;
+
+                img {
+                    border-radius: 50px 0 0 0;
+                }
+            }
+
+            .box-img2 {
+                width: 355px;
+                height: 434px;
+                background-image: url(https://s3-alpha-sig.figma.com/img/98fb/219f/a11f805aade2224f1d6658764a2395df?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UkCcJsOzjfkqvIcRgEi4qgAQsfOzT9FAwQnpAYcSGGn2dRLbJrWQvAgk0fOVi2EcZCvPW7dEqC-FL6PzKYfF0xNjb7U~UOP41nQ1yUoK-aVpdzQmjrDv6L38UXjlefikq1ImWOJEFS2ozLIDw2kud~C2JywMry~a7PVvleP5WFebyj-6gbx16ha8mv~nP736Bw3PFuiece7LfqSW5y-adoSgTRuz~GwHGWzBdVySsoYZYXy9jPxFsw4NXDJZSDL~YiaDbCa5akgQZPjTgi-T63xlHdkqI4Jiwd9BvzSfHgx7RD78Ed0B~zeZzIM8sqrcg~c6jGnDTqgXBX1~iY69BA__);
+                background-position: center;
+                background-size: 300%;
+
+
+            }
+
+            .box-img3 {
+                width: 355px;
+                height: 434px;
+                text-align: center;
+                border-radius: 0 0 50px 0;
+
+                img {
+                    width: 30%;
+                    height: auto;
+                }
+
+                background-image: url(https://s3-alpha-sig.figma.com/img/9773/480d/f227b5452963a4755f0d342b5c2ca5e1?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P5CTXWsztJHrEfGIr4Jv16oxYmqVNJsdXWNxG2MiVnYyGyArGQxtDr5XgEs-ndOB2aS6WC6AQpGrYeCDKo72mQqFcaDhY9C1K0bqTHv2pZzReohSKuZtCX32YmYsqDWVxijRBeSiquJI4jIRdvGb0XTk8-R9cTnz8W7ERPNevAcm0lpkuAYJ5HGIzR-d~E8-xFdhETf5qnmHAzrLUlcyTCYJ11mxAOFuQGTkGMN7Nd0uk9Hirlcpi6Cp4ChiGuLFwzroT1TsV-djSfxfJr2j~AG7okmYF1JzTRISOpil0KLzPqlVXK9RzGWv0BqLByHw7tJdfZYIfWFFEg8pSa2AFQ__);
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .beauti {
+        background-color: #F2F5FF;
+        height: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        button {
+            background-color: #054C73;
+            color: white;
+            font-size: 16px;
+        }
+
+        h1 {
+            color: var(--Font-Color, #333);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p {
+            color: var(--Font-Color1, #666);
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 39px;
+            /* 195% */
+        }
+
+        img {
+            width: 500px;
+            height: 750px;
+            border-radius: 50px 20px 50px 20px;
+
+        }
+
+        .box1 {
+            margin-left: 120px;
+        }
+
+        .box2 {
+            z-index: 2;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: #09513B;
+            position: absolute;
+            right: 5%;
+            z-index: 1;
+        }
+    }
+
+    .browse {
+        text-align: center;
+        margin-top: 50px;
+
+        h1 {
+            color: var(--Font-Color, #333);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        h6 {
+            color: var(--Font-Color1, #666);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .photo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+}
