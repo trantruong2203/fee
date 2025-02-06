@@ -2,18 +2,35 @@
 var a = document.querySelector("h1");
 a.setAttribute("class", "text-danger")
 
-
-
 var a = document.getElementById("fruit");
+var b = [{
+  id :1,
+  img: "https://img.freepik.com/premium-vector/tall-green-birch-trees-illustration-flat-vector_9493-102749.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid"
+},
+{
+  id : 2,
+  img: "https://img.freepik.com/free-photo/skjolden-norway-may-16-2023-mountain_58702-10986.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid"
+},
+{
+  id : 2,
+  img: "https://img.freepik.com/free-photo/russian-landscape-with-birch-forest_1398-3902.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid"
+},
+{
+  id : 2,
+  img: "https://img.freepik.com/free-photo/natural-landscape-view_1112-382.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid"
+},
 
-var b = [1, 2, 3, 4, 5, 6, 7, 8];
+
+
+
+];
 b.map(e => {
   a.innerHTML += `
 <div class="col-lg-3 col-md-6 col-12">
             <div class="fruit-item position-relative rounded mt-4 border border-warning ">
               <div class="fruite-img">
                 <img
-                  src="https://img.freepik.com/free-photo/creative-composition-with-fruits-texture-vibrant-colors_23-2149888002.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid"
+                  src=${e.img}
                   class="img-fluid rounded-top w-100 " id="ima3" alt="">
               </div>
               <div class="position-absolute rounded-pill text-white bg-warning px-3 py-1"
@@ -32,11 +49,8 @@ b.map(e => {
           </div>
     `
   var ima3 = document.getElementById('ima3');
-  ima3.setAttribute('src', "https://img.freepik.com/free-photo/horizontal-landscape-with-birches-glove_1398-4449.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid, ")
-
+  // ima3.setAttribute('src', "https://img.freepik.com/free-photo/horizontal-landscape-with-birches-glove_1398-4449.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid, ")
 })
-
-
 a.setAttribute('src', "https://img.freepik.com/free-vector/snowy-forest-background_23-2147978623.jpg?uid=R179970433&ga=GA1.1.232438409.1734106633&semt=ais_hybrid", "")
 
 var c = document.getElementById("carousel1")
@@ -97,7 +111,7 @@ addToListInfo.map(e => {
               <img src="https://themewagon.github.io/fruitables/img/testimonial-1.jpg" class="rounded" alt="">
               <div class="content">
                 <h2 class="text-nowrap">Client Name</h2>
-                <h5 class="fw-light">Profession</h5>
+                <h5 class="fw-light">${e}</h5>
               </div>
             </div>
             <i class="fas fa-quote-left fa-flip-horizontal"></i>
@@ -110,11 +124,11 @@ const prev = document.querySelector('.btr-prev')
 let currentIndex = 0;
 
 setInterval(() => {
-  currentIndex = (currentIndex < list.length - 1) ? currentIndex + 1 : 0;
+  currentIndex = (currentIndex < list.length - 2) ? currentIndex + 1 : 0;
   updateCarousel()
 }, 3000);
 function updateCarousel() {
-  const offset = -currentIndex * 100;
+  const offset = -currentIndex * 100/6;
   listInfo.style.transform = `translateX(${offset}%)`;
 }
 

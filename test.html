@@ -1,182 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .list-info {
-      display: block;
-      margin: auto;
-      position: relative;
-      overflow: hidden;
-      width: 90%;
-
-      .list1 {
-        width: 635px;
-
-
-      }
-    }
-
-    .box-content {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .box-img {
-      display: flex;
-      gap: 20px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Carousel HTML -->
-  <div class="carousel-container">
-    <button class="carousel-prev">&#10094;</button>
-    <div class="carousel">
-      <div class="carousel-item list1 bg-light p-4">
-        <div class="content border-bottom border-warning mb-4 py-2">
-          <p>Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever
-            since the 1500s.</p>
-        </div>
-        <div class="box-content">
-          <div class="box-img">
-            <img src="https://themewagon.github.io/fruitables/img/testimonial-1.jpg" class="rounded" alt="">
-            <div class="content">
-              <h2 class="text-nowrap">Client Name 1</h2>
-              <h5 class="fw-light">Profession</h5>
-            </div>
-          </div>
-          <i class="fas fa-quote-left fa-flip-horizontal"></i>
-        </div>
-      </div>
-
-      <div class="carousel-item list1 bg-light p-4">
-        <div class="content border-bottom border-warning mb-4 py-2">
-          <p>Another testimonial text that can be displayed in this carousel.</p>
-        </div>
-        <div class="box-content">
-          <div class="box-img">
-            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
-            <div class="content">
-              <h2 class="text-nowrap">Client Name 2</h2>
-              <h5 class="fw-light">Another Profession</h5>
-            </div>
-          </div>
-          <i class="fas fa-quote-left fa-flip-horizontal"></i>
-        </div>
-      </div>
-      <div class="carousel-item list1 bg-light p-4">
-        <div class="content border-bottom border-warning mb-4 py-2">
-          <p>Another testimonial text that can be displayed in this carousel.</p>
-        </div>
-        <div class="box-content">
-          <div class="box-img">
-            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
-            <div class="content">
-              <h2 class="text-nowrap">Client Name 2</h2>
-              <h5 class="fw-light">Another Profession</h5>
-            </div>
-          </div>
-          <i class="fas fa-quote-left fa-flip-horizontal"></i>
-        </div>
-      </div>
-      <div class="carousel-item list1 bg-light p-4">
-        <div class="content border-bottom border-warning mb-4 py-2">
-          <p>Another testimonial text that can be displayed in this carousel.</p>
-        </div>
-        <div class="box-content">
-          <div class="box-img">
-            <img src="https://themewagon.github.io/fruitables/img/testimonial-2.jpg" class="rounded" alt="">
-            <div class="content">
-              <h2 class="text-nowrap">Client Name 2</h2>
-              <h5 class="fw-light">Another Profession</h5>
-            </div>
-          </div>
-          <i class="fas fa-quote-left fa-flip-horizontal"></i>
-        </div>
-      </div>
-
-      <!-- Add more carousel items as needed -->
+<!-- Carousel HTML -->
+<div class="carousel-container">
+  <button class="carousel-prev">&#10094;</button>
+  <div class="carousel" style="width: 600px; overflow: hidden;">
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
     </div>
-    <button class="carousel-next">&#10095;</button>
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
+    </div>
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
+    </div>
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
+    </div>
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
+    </div>
+    <div class="carousel-item list1 bg-light p-4" style="display: flex;">
+      <img src="https://img.freepik.com/free-photo/birch-grove-autumn_181624-23156.jpg?semt=ais_hybrid" class="rounded" alt="Image 1" style="width: 300px;">
+    </div>
   </div>
+  <button class="carousel-next">&#10095;</button>
+</div>
 
-  <!-- Carousel Styles -->
-  <style>
-    .carousel-container {
-      position: relative;
-      max-width: 800px;
-      margin: auto;
-      overflow: hidden;
-    }
+<!-- Carousel Styles -->
+<style>
+  .carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    display: flex;
+  }
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  .carousel-prev {
+    left: 0;
+  }
+  .carousel-next {
+    right: 0;
+  }
+</style>
 
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-    }
+<!-- Carousel JavaScript -->
+<script>
+  const carousel = document.querySelector('.carousel');
+  const items = document.querySelectorAll('.carousel-item img');
+  const prevButton = document.querySelector('.carousel-prev');
+  const nextButton = document.querySelector('.carousel-next');
 
-    .carousel-item {
-      min-width: 100%;
-      box-sizing: border-box;
-    }
+  let currentIndex = 0;
 
-    .carousel-prev,
-    .carousel-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      cursor: pointer;
-      padding: 10px;
-      z-index: 10;
-    }
+  function updateCarousel() {
+    const offset = -currentIndex * 300;  // Each image is 300px wide
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
 
-    .carousel-prev {
-      left: 0;
-    }
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 2;
+    updateCarousel();
+  });
 
-    .carousel-next {
-      right: 0;
-    }
-  </style>
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < items.length - 2) ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
 
-  <!-- Carousel JavaScript -->
-  <script>
-    const carousel = document.querySelector('.carousel');
-    const items = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-
-    let currentIndex = 0;
-
-    setInterval(() => {
-      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-      updateCarousel();
-    }, 3000);
-
-    function updateCarousel() {
-      const offset = -currentIndex * 100;
-      carousel.style.transform = `translateX(${offset}%)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-      updateCarousel();
-    });
-
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-      updateCarousel();
-    });
-  </script>
-
-</body>
-
-</html>
+  setInterval(() => {
+    currentIndex = (currentIndex < items.length - 2) ? currentIndex + 1 : 0;
+    updateCarousel();
+  }, 3000);  // Chuyển slide mỗi 3 giây 
+</script>

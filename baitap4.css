@@ -117,22 +117,23 @@ body {
     }
 
     .client {
-        overflow: hidden;
-        .list-info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            position: relative;
-            
-            min-width: 100%;
-            gap: 30px;
-            
-
-            .list1 {
-                min-width: 100%;
+        .cha {
+            overflow: hidden;
+            .list-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                position: relative;
+                width: 250vw;
+                gap: 30px;
+                
+    
+                .list1 {
+                }
             }
         }
+     
 
         .box-content {
             display: flex;

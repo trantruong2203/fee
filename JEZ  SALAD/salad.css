@@ -1,0 +1,312 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+
+}
+
+header {
+    width: 100%;
+
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    ;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            .jez {
+                color: #FB9333;
+                font-size: 24px;
+                font-weight: 900;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+
+        #navbarSupportedContent {
+            .home {
+                color: #FB9300;
+            }
+
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+
+        .sign {
+            button {
+                background-color: #FB9333;
+                width: 130px;
+                height: 54px;
+                font-size: 16px;
+                font-weight: 600;
+                color: aliceblue;
+            }
+
+        }
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .left {
+            h6 {
+                background-color: #FFF0DC;
+                font-size: 16px;
+                font-weight: 600;
+                color: #FB9333;
+            }
+
+            h1 {
+                font-size: 72px;
+                font-weight: 700;
+                color: #575757;
+                margin-top: 40px;
+            }
+
+            p {
+                color: #828282;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 30px;
+            }
+
+            .order {
+                background-color: #FB9300;
+                color: #FFF;
+                gap: 16px;
+                padding: 10px 25px;
+            }
+
+            .information {
+                margin: 0;
+                margin-top: 60px;
+
+                .num {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0;
+                    color: #828282;
+
+                }
+            }
+        }
+
+        .right {
+            position: relative;
+
+            .main-img {
+                position: absolute;
+                right: -100px;
+                width: 130%;
+                display: flex;
+                z-index: 3;
+
+
+            }
+
+            .box1 {
+                width: 400px;
+                height: 400px;
+                background-color: #FFC97D;
+                border-radius: 80px;
+                transform: rotate(-120deg);
+                z-index: 2;
+                position: absolute;
+                top: 130px;
+                right: 120px;
+            }
+
+            .box2 {
+                width: 400px;
+                height: 400px;
+                background-color: #FFE8C8;
+                border-radius: 80px;
+                transform: rotate(-100deg);
+                z-index: 1;
+                position: absolute;
+                top: 130px;
+                right: 120px;
+            }
+        }
+    }
+
+}
+
+main {
+    .healthy-food {
+        gap: 100px;
+        margin-top: 50px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            color: #828282;
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #828282;
+            width: 450px;
+            margin-left: 150px;
+        }
+    }
+
+    .box-card {
+        .card {
+            display: flex;
+            align-items: start;
+            padding: 30px;
+            border: #FB9333 solid 1px;
+            border-radius: 50px;
+            margin-top: 50px;
+
+            .card-top {
+                font-size: 50px;
+                background-color: #FFE8C8;
+                border-radius: 20px;
+                padding: 10px;
+                margin-left: ;
+
+            }
+
+            .card-body {
+                margin-top: 50px;
+
+                a {
+                    color: #575757;
+                }
+
+                h5 {
+                    color: #2B2B2B;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: #575757;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .about-us {
+        background-color: #FFF5E8;
+        height: 500px;
+        margin-top: 50px;
+        padding: 100px 0;
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h1 {
+            color: #333;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 63.984px;
+            /* 133.3% */
+        }
+
+        p {
+            color: var(--Text-Default-in-Field, #999);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 24px */
+        }
+
+        .box-card-aboutus {
+            
+            .card-1 {
+                position: absolute;
+                padding: 10px;
+                border: white solid 1px;
+                border-radius: 5px;
+                width: 269px;
+
+                img {
+                    width: 90px;
+                    height: 90px;
+                    position: relative;
+                    top: -50px;
+                    left: 10px;
+                    border-radius: 5px;
+                }
+
+                .card-body {
+                    h5 {
+                        color: var(--2-b-2-b-2-b, #2B2B2B);
+                        font-variant-numeric: lining-nums proportional-nums;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 31.992px;
+                        /* 133.3% */
+                    }
+
+                    h6 {
+                        color: var(--Text-Default-in-Field, #999);
+                        font-family: Poppins;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                        /* 21px */
+                    }
+
+                    p {
+                        color: var(--575757, #575757);
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        /* 24px */
+                        letter-spacing: -0.32px;
+                    }
+                }
+            }
+        }
+    }
+}
